@@ -1,0 +1,360 @@
+:root{
+--Soft-red: hsl(7, 99%, 70%);
+--Yellew: hsl(51, 100%, 49%);
+--graphic-design-text: hsl(167, 40%, 24%);
+--Dark-blue-photography-text: hsl(198, 62%, 26%);
+--footer: hsl(168, 34%, 41%);
+--Very-dark-desaturated-blue: hsl(212, 27%, 19%);
+--Very-dark-grayish-blue: hsl(213, 9%, 39%);
+--Dark-grayish-blue: rgb(129, 132, 152);
+--Grayish-blue: hsl(210, 4%, 67%);
+--White: hsl(0, 0%, 100%);
+}
+*{
+    margin: 0;
+    font-family: 'Barlow' , 'Fraunces' , sans-serif;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    height: auto;
+    font-size: 18px;
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+}
+.container1{
+    height: 100vh;
+    width: 100%;
+    background:url('./images/desktop/image-header.jpg') no-repeat center center/cover;
+    display: flex;
+    flex-direction: column;
+    color: var(--White);
+}
+.menu{
+    display: none;
+}
+.header{
+    height: 20vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.7em;
+}
+.nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+}
+.spanlink{
+
+display: flex;
+justify-content: center;
+color: rgba(255, 255, 255,90%);
+
+}
+
+.nav-link:link , .nav-link:visited{
+    text-decoration: none;
+    color: var(--White);
+    text-align: center;
+    font-size: 1rem;
+    
+}
+.spanlink:hover{
+    padding: 0.8em;
+border-radius: 1.2em;
+background: rgba(129, 132, 152,60%);
+color: rgba(255, 255, 255,100%);
+transition: 0.1s;
+
+}
+
+
+.logo >img{
+    height: 1.7rem;
+    width: auto;
+}
+ .maintitel{
+    font-family:'Fraunces' , serif ;
+    display: flex;
+    justify-content: center;
+    font-size: 1.7rem;
+    letter-spacing: 0.2rem;
+    text-align: center;
+ }
+
+
+.desription{
+    
+width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.d1 ,.d2,.d3{
+    width: 100%;
+    height: 70vh;
+    display: flex;
+} 
+.d2{
+    flex-direction: row-reverse;
+}
+.img{
+    height: 100%;
+    width: 50%;
+}
+.img >img{
+    height: 100%;
+    width: 100%;
+}
+.con{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 1.6rem;
+    
+
+}
+.con>.dcontent{
+    width: 90%;
+    height: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 1em;
+
+}
+.con>h1{
+    font-size: 2rem;
+}
+
+.desc{
+    
+    color: var(--Dark-grayish-blue);
+    font-size: 0.8rem;
+    line-height: 1.2rem;
+    letter-spacing: 0.1rem;
+    font-weight: 600;
+}
+.more{
+    font-weight: 600;
+    font-size: 1rem;
+}
+.m1:hover{
+    border-bottom: solid 0.3em var(--Yellew);
+    cursor: pointer;
+    transition: 0.5s;
+
+}
+.m2:hover{
+    border-bottom: solid 0.3em var(--Soft-red);
+    cursor: pointer;
+    transition: 0.5s;
+
+}
+.con3{
+    background: url(./images/desktop/image-graphic-design.jpg) no-repeat center center/cover;
+    color: var(--graphic-design-text);    
+}
+.con4{
+    background: url(./images/desktop/image-photography.jpg)no-repeat center center/cover;
+    color: var(--Dark-blue-photography-text);
+} 
+.co{
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-direction: column;
+    gap: 1em;
+}
+.co>.dcontent{
+    width: 80%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1em;
+
+}
+
+.sc-aproval{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+
+}
+.sc-aproval>.maintitel{
+    color: var(--Dark-grayish-blue);
+    margin-top: 2rem;
+}
+.cl{
+    width: 100%;
+    height: 70%;
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+}
+.client{
+    height: 100%;
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+.cl-pictur>img{
+height: 3rem;
+width: 3rem;
+border-radius: 50%;
+}
+
+.id{
+    width: 100%;
+    text-align: center;
+    line-height: 2rem;
+}
+.name{
+    font-size: 1rem;
+    font-weight: 800;
+}
+.role{
+    font-size: 0.8rem;
+    color: var(--Grayish-blue);
+}
+
+.galerie{
+height: 60vh;
+width: 100%;
+display: flex;
+}
+.galerie>img{
+    width: 25%;
+    height: auto;
+}
+
+
+.footer{
+    height: 50vh;
+    width: 100%;
+    background:hsl(167deg 37% 58%);
+    color: var(--graphic-design-text);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+.footer>.logo{
+    font-weight: 800;
+}
+
+.footer>.contact>a:link , a:visited{
+margin-left: 2em;
+text-decoration: none;
+font-size: 1rem;
+color:var(--graphic-design-text) ;
+}
+.icon{
+    margin-left: 1em;
+}
+.icon:hover , .footer>.contact>a:hover{
+    color: white;
+    cursor: pointer;
+}
+
+
+@media screen and (max-width:500px) {
+ 
+.menu{
+    display: block;
+
+}
+.nav{
+    height: 50vh;
+    width: 100%;
+    background: white;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    gap: 1rem; 
+    color: var(--Very-dark-grayish-blue);
+    position: relative;
+    top: 4rem;
+    left: 0;
+    box-shadow: 1px 1px  var(--Grayish-blue);
+    transition: 0.3s;
+
+}
+ 
+
+.spanlink{
+
+    display: flex;
+    justify-content: center;
+    font-weight: 700;
+    }
+    .nav-link:link , .nav-link:visited{
+        color: var(--Dark-grayish-blue);
+    }
+    .nav-link:hover{
+        color: var(--Very-dark-desaturated-blue);
+    }
+    .spanlink:hover{
+        padding: 0.8em;
+    border-radius: 20px;
+    background: var(--Yellew);
+    transition: 0.1s;
+    
+    }
+
+
+.desription{
+    height: 400vh;
+    
+}
+.d1 ,.d2,.d3 {
+    height:auto ;
+    display: flex;
+    flex-direction: column;
+    
+} 
+.sc-aproval{
+    margin-top: 10px;
+    height: 260vh;
+}
+.cl{
+    height: 150vh;
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+
+}
+.con , .co ,.img ,.client {
+    width: 100%;
+    height: 70vh;
+}
+.galerie{
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    gap: 0;
+}
+.galerie>img{
+    width: 100%;
+    height: auto;
+}
+}
