@@ -1,10 +1,17 @@
-const nav=document.querySelector('.nav')
+const navbar=document.querySelector('.navbar')
 const menu=document.querySelector('.menu')
-const header=document.querySelector('.header')
-const desription=document.querySelector('.desription')
+const creative=document.querySelector('.creative')
 
-console.log(header,desription);
+
 menu.addEventListener('mouseover' ,()=>{
-    nav.style.display='flex'
+    navbar.style.display='flex'
+    creative.style.display='none'
+    menu.style.transition='2s'
     menu.style.opacity=0.6
+})
+menu.addEventListener('mouseout' ,()=>{
+    navbar.style.display='none'
+    creative.style.display='block'
+    menu.style.transition='2s'
+
 })

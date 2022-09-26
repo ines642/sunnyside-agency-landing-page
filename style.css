@@ -12,7 +12,6 @@
 }
 *{
     margin: 0;
-    font-family: 'Barlow' , 'Fraunces' , sans-serif;
     box-sizing: border-box;
 }
 body{
@@ -22,6 +21,11 @@ body{
     display: flex;
     flex-direction: column;
     overflow-x: hidden;
+    font-family: 'Barlow' , 'Fraunces' , sans-serif;
+}
+.titel, .more{
+    font-family:'Fraunces' , sans-serif ;
+    font-weight:900;
 }
 .container1{
     height: 100vh;
@@ -33,6 +37,7 @@ body{
 }
 .menu{
     display: none;
+    
 }
 .header{
     height: 20vh;
@@ -78,14 +83,27 @@ transition: 0.1s;
     width: auto;
 }
  .maintitel{
-    font-family:'Fraunces' , serif ;
     display: flex;
     justify-content: center;
     font-size: 1.7rem;
     letter-spacing: 0.2rem;
     text-align: center;
  }
+ .navbar{
+    height: 60vh;
+    width: 80%;
+    background: white;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    gap: 1rem; 
+    color: var(--Very-dark-grayish-blue);
+    box-shadow: 1px 1px  var(--Grayish-blue);
+    z-index: 1;
+    position: relative;
 
+}
 
 .desription{
     
@@ -121,30 +139,30 @@ width: 100%;
 
 }
 .con>.dcontent{
-    width: 90%;
-    height: 60%;
+    width: 65%;
+    min-height: 70%;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: flex-start;
     flex-direction: column;
-    gap: 1em;
 
 }
 .con>h1{
-    font-size: 2rem;
+    font-size: 5rem;
+    color: var(--Very-dark-desaturated-blue);
 }
 
 .desc{
     
-    color: var(--Dark-grayish-blue);
-    font-size: 0.8rem;
-    line-height: 1.2rem;
+    color: var(--Very-dark-grayish-blue);
+    font-size: 1rem;
+    line-height: 1.4rem;
     letter-spacing: 0.1rem;
     font-weight: 600;
+    opacity: 0.9;
 }
 .more{
-    font-weight: 600;
-    font-size: 1rem;
+    font-size: 0.9rem;
 }
 .m1:hover{
     border-bottom: solid 0.3em var(--Yellew);
@@ -190,13 +208,14 @@ width: 100%;
     width: 100%;
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: center;
     flex-direction: column;
+    gap:2em;
 
 }
-.sc-aproval>.maintitel{
+.sc-aproval>.mtitel{
     color: var(--Dark-grayish-blue);
-    margin-top: 2rem;
+    
 }
 .cl{
     width: 100%;
@@ -207,12 +226,13 @@ width: 100%;
 }
 .client{
     height: 100%;
-    width: 20%;
+    width: 25%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     gap: 1.5rem;
+    text-align: center;
 }
 
 .cl-pictur>img{
@@ -231,8 +251,8 @@ border-radius: 50%;
     font-weight: 800;
 }
 .role{
-    font-size: 0.8rem;
-    color: var(--Grayish-blue);
+    font-size: 0.9rem;
+    color: var(--Dark-grayish-blue);
 }
 
 .galerie{
@@ -277,43 +297,30 @@ color:var(--graphic-design-text) ;
 
 
 @media screen and (max-width:500px) {
- 
+
+.nav{
+    display: none;
+} 
+
+
 .menu{
     display: block;
-
-}
-.nav{
-    height: 50vh;
-    width: 100%;
-    background: white;
-    display: none;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
-    gap: 1rem; 
-    color: var(--Very-dark-grayish-blue);
-    position: relative;
-    top: 4rem;
-    left: 0;
-    box-shadow: 1px 1px  var(--Grayish-blue);
-    transition: 0.3s;
-
 }
  
 
-.spanlink{
+.menu-content{
 
     display: flex;
     justify-content: center;
     font-weight: 700;
     }
-    .nav-link:link , .nav-link:visited{
+    .menu-content > .nav-link:link , .nav-link:visited{
         color: var(--Dark-grayish-blue);
     }
-    .nav-link:hover{
+    .menu-content > .nav-link:hover{
         color: var(--Very-dark-desaturated-blue);
     }
-    .spanlink:hover{
+    .menu-content:hover{
         padding: 0.8em;
     border-radius: 20px;
     background: var(--Yellew);
@@ -355,6 +362,6 @@ color:var(--graphic-design-text) ;
 }
 .galerie>img{
     width: 100%;
-    height: auto;
+    height: 100%;
 }
 }
