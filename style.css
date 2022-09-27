@@ -99,10 +99,19 @@ transition: 0.1s;
     justify-content: space-around;
     gap: 1rem; 
     color: var(--Very-dark-grayish-blue);
-    box-shadow: 1px 1px  var(--Grayish-blue);
+    box-shadow: 3px 3px 20px 1px hsl(223deg 31% 35%);
     z-index: 1;
     position: relative;
-
+    animation: anim 0.2s ease-in  1 ;
+}
+@keyframes anim {
+    from{
+        width: 10%;
+        background: #fb9200;
+    }
+    to {
+        width: 80%;
+    }
 }
 
 .desription{
